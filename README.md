@@ -1,11 +1,11 @@
 # b2b
 
-**b2b**, acrônimo para '*base to base*', é um utilitário que tem, como saída, a conversão de base de determinado número passado como entrada.
+**b2b**, acrônimo para '*base to bases*', é um utilitário que tem, como saída, a conversão equivalente em outras bases de determinado número passado como entrada.
 
 ## Mensagem de ajuda
 
-    b2b - 'base to base', ferramenta para conversão de bases binária,
-           decimal e hexadecimal.
+    b2b - 'base to bases', ferramenta para conversão de um número inteiro entre
+           as bases binária, decimal e hexadecimal.
 
 	    b2b -b|-d|-h [NUM]
 
@@ -17,14 +17,14 @@
 	    bin  dec  hex
 
     EXEMPLO:
-	    b2b -b 1010
-	    1010  10  A
+	    b2b -b 1011
+	    1011  11  B
 
-	    b2b -d 10
-	    1010  10  A
+	    b2b -d 12
+	    1100  12  C
 
-	    b2b -h A
-	    1010  10  A
+	    b2b -h D
+	    1101  13  D
 
 ## Como usá-lo em sua máquina
 Para fazer o b2b funcionar em qualquer diretório que vc esteja pelo terminal, é necessário colocar o b2b em um dos diretórios que é listado no $PATH, como visto a seguir.
