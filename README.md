@@ -1,6 +1,8 @@
-# b2b
+﻿# b2b -- base to bases
 
-**b2b**, acrônimo para '*base to bases*', é um utilitário que tem, como saída, a conversão equivalente em outras bases de determinado número passado como entrada.
+O **b2b**, com acrônimo para "base to bases," é um utilitário desenvolvido para converter números entre diferentes sistemas numéricos, ou bases. Em informática, bases são sistemas de numeração que determinam a forma como os números são representados. Os sistemas mais comuns são a base decimal (base 10), a base binária (base 2), a base octal (base 8), e a base hexadecimal (base 16).
+
+O **b2b** recebe um número e sua base de origem como entrada e produz como saída o número convertido para outras bases desejadas. Por exemplo, ele pode receber um número em formato decimal e convertê-lo para binário, octal e hexadecimal. Isso é útil para programadores e administradores de sistemas que frequentemente trabalham com diferentes representações numéricas e precisam converter números de uma base para outra de maneira rápida e eficiente.
 
 ## Mensagem de ajuda
 
@@ -26,30 +28,28 @@
 	    b2b -h D
 	    1101  13  D
 
-## Como usá-lo em sua máquina
-Para fazer o b2b funcionar em qualquer diretório que vc esteja pelo terminal, é necessário colocar o b2b em um dos diretórios que é listado no $PATH, como visto a seguir.
+## Experimentando em sua máquina
+#### Clone o repositório
 
-    echo $PATH
-    /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-Assim, pode-se colocar o b2b no /bin/ que o shell encontrará o b2b e o executará.
+    git clone https://github.com/yurincmt/b2b.git
 
-**Link simbólico em /bin/**
+#### Rodando no diretório do projeto
 
-    git clone https://github.com/thrxshxll/b2b.git
-    cd b2b
-    aux=$(pwd)
-    sudo chmod ug+x b2b.sh
-    cd /bin/
-    sudo ln -s "$aux/b2b.sh" b2b
-    unset aux
+    ./b2b -h ff
 
- - Como este é um link simbólico para o b2b.sh no diretóro do repositório que foi clonado, se esse diretório for apagado, o b2b não funcionará mais.
+#### Instalando na máquina
 
-**b2b em /bin/**
+> Os comando make devem ser executado no diretório raiz do projeto (onde o arquivo Makefile se encontra).
 
-    git clone https://github.com/thrxshxll/b2b.git
-    cd b2b
-    sudo mv b2b.sh /bin/b2b
-    sudo chmod ug+x /bin/b2b
+Para rodar o comando `b2b` de qualquer diretório, como qualquer outro comando de sua máquina, precisa-se colocá-lo em um dos diretórios da variável `PATH`. Para fazer isso em um comando, execute o seguinte.
 
- - Agora que o b2b.sh foi movido para /bin/b2b, o diretório do repositório baixado com o git pode ser apagado que o b2b funcionará.
+    make install
+
+#### Removendo da máquina
+
+    make uninstall
+
+#### Rode alguns testes
+
+    make test
+
