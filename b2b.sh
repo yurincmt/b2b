@@ -6,7 +6,7 @@
 
 
 usagemsg=\
-"    b2b - 'base to base', ferramenta para conversão de bases binária,
+"b2b - 'base to base', ferramenta para conversão de bases binária,
            decimal e hexadecimal.
 
     b2b -b|-d|-h [NUM]
